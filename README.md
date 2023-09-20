@@ -15,3 +15,10 @@
 
 Expected: works in dev and production modes.
 Actual: works in dev, gives a `TypeError: Expected signal to be an instanceof AbortSignal` error in production mode.
+
+### Testing with other versions
+
+13.4.19: **works** - `npm install --save next@13.4.19 eslint-config-next@13.4.19`
+13.5.1: **fails** - `npm install --save next@13.5.1 eslint-config-next@13.5.1`
+13.5.2: **fails** - `npm install --save next@13.5.2 eslint-config-next@13.5.2`
+13.5.2-canary.2: **fails** - `npm install --save next@canary eslint-config-next@13.5.2` (as of 2023-09-20 18:30 UTC)
